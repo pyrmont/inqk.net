@@ -14,7 +14,7 @@ body, a {
 }
 
 a {
-	border-bottom: 1px dotted;
+	border-bottom: 1px dotted #A3A3A3;
 	padding-bottom: 1px;
 	text-decoration: none;
 }
@@ -35,13 +35,13 @@ section#content {
 	clear: both;
 	float: right;
 	font-size: 2.0em;
-	line-height: 1.5em;
+	line-height: 1.7em;
 	margin-bottom: 1.3em;
 	max-width: 600px;
 }
 
 section#content p {
-	margin-bottom: 1.2em;
+	margin-bottom: 1.0em;
 }
 
 footer {
