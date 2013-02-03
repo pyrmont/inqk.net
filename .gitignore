@@ -34,11 +34,5 @@
 .Spotlight-V100
 .Trashes
 Icon?
-ehthumbs.db
+thumbs.db
 Thumbs.db
-
-# Capistrano files #
-####################
-
-Capfile
-config
