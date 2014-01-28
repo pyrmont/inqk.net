@@ -1,7 +1,6 @@
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
 set :ssh_options, { :forward_agent => true }
 
-set :user,        "deploy"
 set :application, "inqk.net"
 set :domain,      "deploy.inqk.net"
 set :repository,  "git@github.com:pyrmont/inqk.git"

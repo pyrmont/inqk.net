@@ -55,8 +55,8 @@ footer {
 @media handheld, only screen and (max-width: 850px) {
     body {
         padding-top: 5em;
-        padding-right: 15%;
-        padding-left: 5em;
+        padding-right: 2em;
+        padding-left: 2em;
     }
 
     header {
@@ -65,11 +65,11 @@ footer {
 
     section#content {
         font-size: 1.4em;
-        max-width: 250px;
+        max-width: 450px;
     }
 
     footer {
         font-size: 0.9em;
-        max-width: 250px;
+        max-width: 450px;
     }
 }
