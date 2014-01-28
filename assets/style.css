@@ -52,7 +52,7 @@ footer {
     padding-bottom: 3.0em;
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 850px) {
     body {
         padding-top: 5em;
         padding-right: 15%;
