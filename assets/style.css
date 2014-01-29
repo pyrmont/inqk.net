@@ -5,8 +5,8 @@ body {
     font-weight: 100;
     margin-bottom: 5em;
     padding-top: 10em;
-    padding-right: 20%;
-    padding-left: 10em;
+    padding-right: 15%;
+    padding-left: 15%;
     text-align: right;
 }
 
@@ -52,7 +52,7 @@ footer {
     padding-bottom: 3.0em;
 }
 
-@media handheld, only screen and (max-width: 850px) {
+@media handheld, only screen and (max-width: 320px) {
     body {
         padding-top: 5em;
         padding-right: 2em;
