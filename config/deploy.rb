@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.2.1'
+lock '3.5.0'
 
 set :application, 'inqk.net'
 set :repo_url, 'git@github.com:pyrmont/inqk.git'
@@ -17,7 +17,7 @@ set :deploy_to, '/var/www/inqk.net'
 # set :format, :pretty
 
 # Default value for :log_level is :debug
-set :log_level, :info
+set :log_level, :debug
 
 # Default value for :pty is false
 # set :pty, true
