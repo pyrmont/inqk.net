@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.5.0'
+lock '3.2.1'
 
 set :application, 'inqk.net'
 set :repo_url, 'git@github.com:pyrmont/inqk.git'
@@ -26,7 +26,7 @@ set :log_level, :debug
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-set :linked_dirs, %w{weblog}
+set :linked_dirs, %w{.well-known weblog}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
