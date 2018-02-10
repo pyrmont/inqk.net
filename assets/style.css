@@ -1,22 +1,62 @@
-body { background-color: #ffffff; color: #2a2a2a; display: flex; flex-direction: column; font-family: 'Khula', sans-serif; font-size: 14px; font-weight: 700; justify-content: center; padding: 0; margin-bottom: 5vw; }
+body {
+  background-color: #ffffff;
+  color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Khula', sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 5vw;
+}
 
-a { background-color: #fdfd26; color: inherit; line-height: 0.5em; padding: 0.5vw 0.5vw 0 0.5vw; text-decoration: none; }
+header {
+  font-family: 'Khula';
+  margin: 8vw 0 8vw 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 10vw;
+  font-weight: 800;
+  letter-spacing: -0.25vw;
+  margin-bottom: -1vw;
+  text-transform: uppercase;
+}
+header h2 {
+  font-size: 6.2vw;
+  font-weight: 800;
+  letter-spacing: -0.3vw;
+}
 
-header { font-family: 'Khula'; margin: 8vw 0 8vw 0; text-align: center; }
-header h1 { font-size: 10vw; font-weight: 800; letter-spacing: -0.25vw; margin-bottom: -1vw; text-transform: uppercase; }
-header h2 { font-size: 6.2vw; letter-spacing: -0.3vw; }
-
-section#content { background-color: #ffff7a; border: 1px solid #ffff0a; border-radius: 10px 10px 10px 10px; box-shadow: 0px 0px 100px -30px rgba(0,0,0,0.75); font-size: 2.5vw; line-height: 4vw; margin: 0 auto 3vw auto; padding: 4vw 4vw; width: 60vw; }
-section#content p { font-weight: 300; margin-top: 3vw; }
-section#content p:first-child { margin-top: 0; }
-section#content p.ps { padding-left: 4vw; }
-section#content p.ps::before { content: ''; margin-left: -4vw; }
+section {
+  background-color: #ffff7a;
+  border: 1px solid #ffff0a;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 100px -30px rgba(0,0,0,0.75);
+  margin: 0 auto 3vw auto;
+  padding: 4vw 4vw;
+  width: 60vw;
+}
+section p {
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: 1.8em;
+  margin-top: 3vw;
+}
+section p:first-child {
+  margin-top: 0;
+}
+section p a {
+  background: #6bff9a;
+  color: inherit;
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.4em 0.2em 0.2em 0.2em;
+  text-decoration: none;
+}
 
 @media handheld, only screen and (max-width: 768px) {
-  a { border: none; }
   header h1 { font-size: 9vw; }
   header h2 { font-size: 5.5vw;}
-  section#content { font-size: 5.5vw; line-height: 9vw; width: 80vw; }
-  section#content p.ps { padding-left: 11vw; }
-  section#content p.ps::before { margin-left: -11vw; }
+  section { padding: 8vw; width: 70vw; }
+  section p { font-size: 1.4em; }
 }
