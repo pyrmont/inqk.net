@@ -1,6 +1,6 @@
 body { background-color: #ffffff; color: #2a2a2a; display: flex; flex-direction: column; font-family: 'Khula', sans-serif; font-size: 14px; font-weight: 700; justify-content: center; padding: 0; margin-bottom: 5vw; }
 
-a { background-color: #fdfd26; border: #9d9d25 1px solid; color: inherit; line-height: 0.5em; padding: 0.5vw 0.5vw 0 0.5vw; text-decoration: none; }
+a { background-color: #fdfd26; color: inherit; line-height: 0.5em; padding: 0.5vw 0.5vw 0 0.5vw; text-decoration: none; }
 
 header { font-family: 'Khula'; margin: 8vw 0 8vw 0; text-align: center; }
 header h1 { font-size: 10vw; font-weight: 800; letter-spacing: -0.25vw; margin-bottom: -1vw; text-transform: uppercase; }
@@ -12,8 +12,11 @@ section#content p:first-child { margin-top: 0; }
 section#content p.ps { padding-left: 4vw; }
 section#content p.ps::before { content: ''; margin-left: -4vw; }
 
-@media handheld, only screen and (max-width: 420px) {
+@media handheld, only screen and (max-width: 768px) {
+  a { border: none; }
   header h1 { font-size: 9vw; }
   header h2 { font-size: 5.5vw;}
-  section#content { width: 80vw; }
+  section#content { font-size: 5.5vw; line-height: 9vw; width: 80vw; }
+  section#content p.ps { padding-left: 11vw; }
+  section#content p.ps::before { margin-left: -11vw; }
 }
