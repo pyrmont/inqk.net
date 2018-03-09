@@ -55,7 +55,7 @@ section p a {
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  header h1 { font-size: 9vw; }
+  header h1 { font-size: 16.5vw; line-height: 14vw; margin-bottom: 5px; }
   header h2 { font-size: 5.5vw;}
   section { padding: 8vw; width: 70vw; }
   section p { font-size: 1.4em; }
