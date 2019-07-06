@@ -36,3 +36,9 @@
 Icon?
 thumbs.db
 Thumbs.db
+
+# Legacy data #
+###############
+
+/legacy/
+!/legacy/.gitkeep
