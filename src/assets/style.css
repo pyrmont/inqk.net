@@ -33,7 +33,7 @@ header h1 span.strapline {
   display: block;
 }
 
-section {
+main {
   background-color: #ffff7a;
   border: 1px solid #ffff0a;
   border-radius: 10px 10px 10px 10px;
@@ -42,16 +42,19 @@ section {
   padding: 4vw 4vw;
   width: 60vw;
 }
-section p {
+
+main p {
   font-size: 1.7em;
   font-weight: 300;
   line-height: 1.8em;
   margin-top: 3vw;
 }
-section p:first-child {
+
+main p:first-child {
   margin-top: 0;
 }
-section p a {
+
+main p a {
   background: #6bff9a;
   color: inherit;
   display: inline-block;
@@ -60,9 +63,38 @@ section p a {
   text-decoration: none;
 }
 
+footer {
+  font-size: 2.0vw;
+  font-weight: 300;
+  margin: 4vw auto 0 auto;
+  text-align: center;
+}
+
+footer section.webring a, footer section.webring h4 {
+  display: inline-block;
+  margin: 0 2vw;
+  opacity: 0.4;
+}
+
+footer a {
+  border-bottom: 1px dashed #2a2a2a;
+  color: inherit;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+footer section.webring h4 {
+  color: #ffffff;
+  font-weight: 800;
+  padding: 1vw;
+  text-shadow: -1px 1px 2px #000000;
+  text-transform: uppercase;
+}
+
 @media handheld, only screen and (max-width: 768px) {
   header h1 { font-size: 5.5vw;}
   header h1 span.name { font-size: 16.5vw; line-height: 14vw; margin-bottom: 5px; }
-  section { padding: 8vw 0; width: 100%; }
-  section p { font-size: 1.4em; padding: 0 8vw; }
+  main { padding: 8vw 0; width: 100%; }
+  main p { font-size: 1.4em; padding: 0 8vw; }
+  footer { font-size: 0.8em; }
 }
