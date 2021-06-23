@@ -64,30 +64,25 @@ main p a {
 }
 
 footer {
-  font-size: 2.0vw;
+  font-size: 1.5vw;
   font-weight: 300;
   margin: 4vw auto 0 auto;
+  opacity: 0.2;
   text-align: center;
 }
 
-footer section.webring a, footer section.webring h4 {
-  display: inline-block;
-  margin: 0 2vw;
-  opacity: 0.4;
+footer h2 {
+  font-weight: 600;
 }
 
 footer a {
   color: inherit;
   text-decoration: none;
-  text-transform: lowercase;
 }
 
-footer section.webring h4 {
-  color: #ffffff;
-  font-weight: 800;
-  padding: 1vw;
-  text-shadow: -1px 1px 2px #000000;
-  text-transform: uppercase;
+footer a code {
+  font-family: "SF Mono", monospace;
+  font-weight: 200;
 }
 
 @media handheld, only screen and (max-width: 768px) {
