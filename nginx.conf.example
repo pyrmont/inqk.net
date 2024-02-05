@@ -1,9 +1,9 @@
 server {
-    server_name  inqk.net;
-    root         /var/www/inqk.net/public;
+    server_name inqk.net;
+    root /var/www/inqk.net/public;
 
-    access_log   /var/www/inqk.net/log/access.log;
-    error_log    /var/www/inqk.net/log/error.log;
+    access_log /var/www/inqk.net/log/access.log;
+    error_log /var/www/inqk.net/log/error.log;
 
     location / {
         index index.html;
@@ -21,11 +21,11 @@ server {
     }
 
     location ^~ /.well-known/ {
-        access_log           off;
-        log_not_found        off;
-        autoindex            off;
-        index                index.html; # "no-such-file.txt",if expected protos don't need it
-        try_files            $uri $uri/ =404;
+        access_log off;
+        log_not_found off;
+        autoindex off;
+        index index.html; # "no-such-file.txt",if expected protos don't need it
+        try_files $uri $uri/ =404;
     }
 
     # this prevents hidden files (beginning with a period) from being served
@@ -37,12 +37,12 @@ server {
 }
 
 server {
-    listen       80;
-    server_name  inqk.net;
+    server_name inqk.net;
+    listen 80;
 }
 
 server {
-    listen       80;
-    server_name  www.inqk.net;
-    return 301   http://inqk.net$request_uri;
+    server_name www.inqk.net;
+    listen 80;
+    return 301 http://inqk.net$request_uri;
 }
