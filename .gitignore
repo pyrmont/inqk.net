@@ -39,6 +39,9 @@ Thumbs.db
 
 # Legacy data #
 ###############
-
 /legacy/
 !/legacy/.gitkeep
+
+# Configuration #
+#################
+*.conf
