@@ -42,7 +42,7 @@ server {
 }
 
 server {
-    server_name www.inqk.net;
+    server_name *.inqk.net;
     listen 80;
     return 301 http://inqk.net$request_uri;
 }
